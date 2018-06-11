@@ -1,0 +1,16 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: go-carbon
+Source: https://github.com/lomik/go-carbon
+Files-Excluded: vendor Godeps/_workspace
+
+Files: *
+Copyright: 2015 Roman Lomonosov
+License: TODO
+
+Files: debian/*
+Copyright: 2018 Hiroaki Nakamura <hnakamur@gmail.com>
+License: TODO
+Comment: Debian packaging is licensed under the same terms as upstream
+
+License: TODO
+TODO
