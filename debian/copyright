@@ -5,12 +5,11 @@ Files-Excluded: vendor Godeps/_workspace
 
 Files: *
 Copyright: 2015 Roman Lomonosov
-License: TODO
+License: MIT
 
 Files: debian/*
 Copyright: 2018 Hiroaki Nakamura <hnakamur@gmail.com>
-License: TODO
+License: MIT
 Comment: Debian packaging is licensed under the same terms as upstream
 
-License: TODO
-TODO
+License: MIT

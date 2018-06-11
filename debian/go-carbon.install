@@ -1,0 +1,3 @@
+debian/go-carbon.conf			etc/go-carbon
+debian/storage-aggregation.conf		etc/go-carbon
+debian/storage-schemas.conf		etc/go-carbon

@@ -1,5 +1,5 @@
-go-carbon (0.12.0+git20180608.b1e6baf-1) UNRELEASED; urgency=medium
+go-carbon (0.12.0-1ppa1~ubuntu18.04.1) bionic; urgency=medium
 
-  * Initial release (Closes: TODO)
+  * Upstream release 0.12.0
 
  -- Hiroaki Nakamura <hnakamur@gmail.com>  Mon, 11 Jun 2018 14:26:18 +0900
