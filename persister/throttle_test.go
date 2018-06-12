@@ -35,8 +35,8 @@ func TestThrottleChan(t *testing.T) {
 
 	for _, perSecond := range perSecondTable {
 		bw := doTestThrottleTicker(perSecond)
-		max := float64(perSecond) * 1.05
-		min := float64(perSecond) * 0.95
+		max := float64(perSecond) * 1.5
+		min := float64(perSecond) * 0.5
 		assert.True(t, float64(bw) >= min, fmt.Sprintf("perSecond: %d, bw: %d", perSecond, bw))
 		assert.True(t, float64(bw) <= max, fmt.Sprintf("perSecond: %d, bw: %d", perSecond, bw))
 	}
