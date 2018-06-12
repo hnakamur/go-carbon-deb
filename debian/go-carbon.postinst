@@ -1,0 +1,24 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" != "configure" ]; then
+    exit 0
+fi
+
+# Set permisions on default data directory on installation
+if [ -z "$2" ]; then
+    chown carbon:carbon /var/lib/graphite/whisper
+fi
+
+if [ -f /var/run/go-carbon.pid ] && kill -0 $(cat /var/run/nginx.pid) >/dev/null; then
+    echo "######################################"
+    echo "# Please restart go-carbon manually. #"
+    echo "######################################"
+else
+    invoke-rc.d go-carbon start || true
+fi
+
+#DEBHELPER#
+
+exit 0

@@ -1,0 +1,3 @@
+/etc/go-carbon
+/var/lib/graphite/whisper
+/var/log/go-carbon
