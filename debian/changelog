@@ -1,3 +1,9 @@
+go-carbon (0.12.0-1ppa3~ubuntu18.04.1) bionic; urgency=medium
+
+  * Ignore test failures
+
+ -- Hiroaki Nakamura <hnakamur@gmail.com>  Fri, 15 Jun 2018 17:16:22 +0900
+
 go-carbon (0.12.0-1ppa2~ubuntu18.04.1) bionic; urgency=medium
 
   * Fix pid filename in postinst script
