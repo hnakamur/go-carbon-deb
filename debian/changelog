@@ -1,3 +1,9 @@
+go-carbon (0.12.0-1ppa5~ubuntu18.04.1) bionic; urgency=medium
+
+  * Remove -pidfile option which is supported only for daemon
+
+ -- Hiroaki Nakamura <hnakamur@gmail.com>  Tue, 19 Jun 2018 14:50:42 +0900
+
 go-carbon (0.12.0-1ppa4~ubuntu18.04.1) bionic; urgency=medium
 
   * Change service type to simple instead of using go-carbon -daemon option
