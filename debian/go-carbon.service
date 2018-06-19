@@ -4,12 +4,14 @@ Documentation=https://github.com/lomik/go-carbon
 After=network.target
 
 [Service]
-Type=forking
-ExecStart=/usr/bin/go-carbon -config /etc/go-carbon/go-carbon.conf -pidfile /var/run/go-carbon.pid -daemon
+Type=simple
+ExecStart=/usr/bin/go-carbon -config /etc/go-carbon/go-carbon.conf -pidfile /var/run/go-carbon.pid
 PIDFile=/var/run/go-carbon.pid
 ExecReload=/bin/kill -HUP $MAINPID
 KillSignal=USR2
 Restart=on-failure
+User=carbon
+Group=carbon
 
 TimeoutStopSec=600
 LimitNOFILE=55555

@@ -6,9 +6,9 @@ if [ "$1" != "configure" ]; then
     exit 0
 fi
 
-# Set permisions on default data directory on installation
+# Set permisions on default data and log directories on installation
 if [ -z "$2" ]; then
-    chown carbon:carbon /var/lib/graphite/whisper
+    chown carbon:carbon /var/lib/graphite/whisper /var/log/go-carbon
 fi
 
 if [ -f /var/run/go-carbon.pid ] && kill -0 $(cat /var/run/go-carbon.pid) >/dev/null; then
