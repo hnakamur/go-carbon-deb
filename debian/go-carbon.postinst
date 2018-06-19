@@ -11,7 +11,7 @@ if [ -z "$2" ]; then
     chown carbon:carbon /var/lib/graphite/whisper /var/log/go-carbon
 fi
 
-if [ -f /var/run/go-carbon.pid ] && kill -0 $(cat /var/run/go-carbon.pid) >/dev/null; then
+if invoke-rc.d go-carbon status >/dev/null; then
     echo "######################################"
     echo "# Please restart go-carbon manually. #"
     echo "######################################"
